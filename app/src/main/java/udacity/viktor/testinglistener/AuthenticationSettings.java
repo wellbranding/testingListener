@@ -14,6 +14,7 @@ public class AuthenticationSettings {
     String token;
     Context context;
 
+    //creating class with provided settings
     public AuthenticationSettings(@NonNull String token, @NonNull Context context){
         this.token = token;
         this.context  = context;

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+//MainActivity it is activity of apps, which use our SDK
 public class MainActivity extends AppCompatActivity {
 
     private String TAG="MainActivityOtherApp";

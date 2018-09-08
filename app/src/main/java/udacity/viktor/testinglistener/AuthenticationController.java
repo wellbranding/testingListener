@@ -30,9 +30,10 @@ public class AuthenticationController {
         return instance;
     }
 
-
+//provide settings in this singleton class
     public void initialize(@NonNull AuthenticationSettings settings1, @Nullable AuthenticationListener listener) {
         this.settings = settings1;
+        //save this listener to use it in all activities and notify MainActivity
         mListener = listener;
     }
 
@@ -40,6 +41,7 @@ public class AuthenticationController {
         if (settings == null) {
             throw new IllegalStateException("call IdenfyContoller.getInstance().initialize(...) first");
         } else {
+            //Open our SDK activity
             Intent intent = new Intent(context, OurSDKActivity.class);
             context.startActivity(intent);
         }
